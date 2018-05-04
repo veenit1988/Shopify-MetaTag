@@ -9,7 +9,6 @@ use phpish\shopify;
 error_reporting(E_ALL);
 //print_r($_SESSION); 
 ini_set('display_errors', 1);
-
 if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']!='' && $_REQUEST['code']!='' )
 {
 	$_SESSION['shop']=$_REQUEST['shop'];
