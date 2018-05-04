@@ -16,7 +16,7 @@ use phpish\shopify;
 	# Step 2: http://docs.shopify.com/api/authentication/oauth#asking-for-permission
 	if (!isset($_GET['code']))
 	{
-		$permission_url = shopify\authorization_url($_GET['shop'], SHOPIFY_APP_API_KEY, array('read_content', 'write_content', 'read_themes', 'write_themes', 'read_script_tags', 'write_script_tags'),'https://shopifyx.online/');
+		$permission_url = shopify\authorization_url($_GET['shop'], SHOPIFY_APP_API_KEY, array('read_content', 'write_content', 'read_themes', 'write_themes', 'read_script_tags', 'write_script_tags'),'https://metatag.herokuapp.com/');
 	//$permission_url = $permission_url ."&redirect_uri=https://metatag.herokuapp.com/";
  	die("<script> window.location.href='$permission_url'</script>");
 	}
